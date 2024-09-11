@@ -70,17 +70,20 @@ public class TrabalhoQuiz {
 
 
         Questao q1 = new Questao();
-        q1.pergunta = "qual numero é par?";
-        q1.opcaoA = "A - 18 ";
-        q1.opcaoB = " B - 21 ";
-        q1.opcaoC = "C - 31";
-        q1.opcaoD = "D - 1";
-        q1.opcaoE = "E - 3";
-        q1.correta = "A";
+        q1.pergunta = "1 - O fuso horário é um sistema político adotado amplamente que define os horários civis do países. O sistema de fusos horários está corretamente dividido em";
+        q1.opcaoA = "A- 12 fusos de 24 graus";
+        q1.opcaoB = "B- 24 fusos de 15 graus";
+        q1.opcaoC = "C- 24 fusos de 24 graus";
+        q1.opcaoD = "D- 30 fusos de 24 graus";
+        q1.opcaoE = "E- 30 fusos de 30 graus";
+        q1.correta = "B";
 
         q1.escrevaQuestao();
         String resposta = q1.leiaResposta();
         q1.isCorreta(resposta);
+
+
+
 
     }
 }
