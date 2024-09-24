@@ -104,11 +104,41 @@ public class TrabalhoQuiz {
         q3.opcaoC = "C- 37";
         q3.opcaoD = "D- 24";
         q3.opcaoE = "E- 32";
-        q3.correta = " c";
+        q3.correta = " C";
 
         q3.escrevaQuestao();
         resposta = q3.leiaResposta();
         q3.isCorreta(resposta);
+
+        Questao q4 = new Questao();
+        q4.pergunta = "4 - Considerando o texto abaixo, marque a alternativa que indica corretamente o elemento conceituado:\n" +
+                "\n" +
+                "“Um corpo dinâmico de origem mineral e orgânica, formado por material inconsolidado (ou friável) que reveste a superfície do planeta Terra.” ";
+
+        q4.opcaoA = "A- Solo";
+        q4.opcaoB = "B- Rocha";
+        q4.opcaoC = "C- Aquifero";
+        q4.opcaoD = "D- Mineral";
+        q4.opcaoE = "E- Minerio";
+        q4.correta = " A";
+
+        q4.escrevaQuestao();
+        resposta = q4.leiaResposta();
+        q4.isCorreta(resposta);
+
+        Questao q5 = new Questao();
+        q5.pergunta = "5 - ";
+        q5.opcaoA = "A- ";
+        q5.opcaoB = "B- ";
+        q5.opcaoC = "C- ";
+        q5.opcaoD = "D- ";
+        q5.opcaoE = "E- ";
+        q5.correta = " ";
+
+        q5.escrevaQuestao();
+        resposta = q5.leiaResposta();
+        q5.isCorreta(resposta);
+
 
 
 
