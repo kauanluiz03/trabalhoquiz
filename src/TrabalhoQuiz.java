@@ -9,14 +9,16 @@ class Questao {
     String opcaoE = "";
     String correta = "";
 
-    public void isCorreta(String resposta){
+    public boolean isCorreta(String resposta){
         if(resposta.equalsIgnoreCase(this.correta)){
             System.out.println("Parabéns resposta Correta! - Letra: " + this.correta);
             System.out.println("");
+            return true;
         } else {
             System.out.println("Resposta Errada!");
             System.out.println("A opção correta é a letra: " + this.correta);
             System.out.println("");
+            return false;
         }
     }
 
@@ -155,13 +157,28 @@ public class TrabalhoQuiz {
         q7.opcaoA = "A- grandes tempestades.";
         q7.opcaoB = "B- estiagens severas.";
         q7.opcaoC = "C- elevada pressão do ar";
-        q7.opcaoD = "D- temperaturas baixas";
+        q7.opcaoD = "D- temperaturas altas";
         q7.opcaoE = "E- temperaturas baixas";
         q7.correta = "D";
 
         q7.escrevaQuestao();
         resposta = q7.leiaResposta();
         q7.isCorreta(resposta);
+
+        Questao q8 = new Questao();
+        q8.pergunta = "8 - (UEG 2018) A média da amplitude térmica na cidade de Cuiabá (MT) durante o mês de junho é de 15,2 °C, ao passo que em Salvador (BA) é de 4,8 °C." +
+                " Considerando-se a localização geográfica dessas cidades, o principal fator climático responsável por essa diferença na amplitude térmica é a:";
+
+        q8.opcaoA = "A- altitude";
+        q8.opcaoB = "B- latitude";
+        q8.opcaoC = "C- longitude";
+        q8.opcaoD = "D- pressão atmosférica";
+        q8.opcaoE = "E- maritimidade/continentalidade";
+        q8.correta = "E";
+
+        q8.escrevaQuestao();
+        resposta = q8.leiaResposta();
+        q8.isCorreta(resposta);
 
 
 
