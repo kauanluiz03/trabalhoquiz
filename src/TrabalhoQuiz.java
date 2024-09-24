@@ -84,6 +84,21 @@ public class TrabalhoQuiz {
 
 
 
+        Questao q2 = new Questao();
+        q2.pergunta = "2 - Quais o menor e o maior país do mundo?";
+        q2.opcaoA = "A- Mônaco e Canadá";
+        q2.opcaoB = "B- Vaticano e Rússia ";
+        q2.opcaoC = "C- São Marino e Índia";
+        q2.opcaoD = "D-  Nauru e China";
+        q2.opcaoE = "E- Malta e Estados Unidos";
+        q2.correta = " B";
+
+        q1.escrevaQuestao();
+        resposta = q1.leiaResposta();
+        q1.isCorreta(resposta);
+
+
+
 
     }
 }
