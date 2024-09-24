@@ -9,16 +9,14 @@ class Questao {
     String opcaoE = "";
     String correta = "";
 
-    public boolean isCorreta(String resposta){
+    public void isCorreta(String resposta){
         if(resposta.equalsIgnoreCase(this.correta)){
             System.out.println("Parabéns resposta Correta! - Letra: " + this.correta);
             System.out.println("");
-            return true;
         } else {
             System.out.println("Resposta Errada!");
             System.out.println("A opção correta é a letra: " + this.correta);
             System.out.println("");
-            return false;
         }
     }
 
@@ -66,7 +64,7 @@ public class TrabalhoQuiz {
         System.out.println("OLA USUARIO,SEJA BEM VINDO AO NOSSO QUIZ , ANTES DE COMEÇAR O QUESTIONARIO GOSTARIA DE SABER QUAL O SEU NOME:");
         String a = leia.nextLine();
 
-        System.out.println("BOM ," + a + " VOCÊ IRA AGORA RESPONDER UM QUESTIONARIO DE 15 PERGUNTAS SOBRE GEOGRAFIA ");
+        System.out.println("BOM ," + a + " SEJA BEM VINDO AO QUIZ , VOCÊ IRA AGORA RESPONDER UM QUESTIONARIO DE 15 PERGUNTAS SOBRE GEOGRAFIA ");
 
 
         Questao q1 = new Questao();
@@ -91,7 +89,7 @@ public class TrabalhoQuiz {
         q2.opcaoC = "C- São Marino e Índia";
         q2.opcaoD = "D- Vaticano e Rússia";
         q2.opcaoE = "E- Malta e Estados Unidos";
-        q2.correta = " D";
+        q2.correta = "D";
 
         q2.escrevaQuestao();
         resposta = q2.leiaResposta();
@@ -104,7 +102,7 @@ public class TrabalhoQuiz {
         q3.opcaoC = "C- 37";
         q3.opcaoD = "D- 24";
         q3.opcaoE = "E- 32";
-        q3.correta = " C";
+        q3.correta = "C";
 
         q3.escrevaQuestao();
         resposta = q3.leiaResposta();
@@ -120,24 +118,50 @@ public class TrabalhoQuiz {
         q4.opcaoC = "C- Aquifero";
         q4.opcaoD = "D- Mineral";
         q4.opcaoE = "E- Minerio";
-        q4.correta = " A";
+        q4.correta = "A";
 
         q4.escrevaQuestao();
         resposta = q4.leiaResposta();
         q4.isCorreta(resposta);
 
         Questao q5 = new Questao();
-        q5.pergunta = "5 - ";
-        q5.opcaoA = "A- ";
-        q5.opcaoB = "B- ";
-        q5.opcaoC = "C- ";
-        q5.opcaoD = "D- ";
-        q5.opcaoE = "E- ";
-        q5.correta = " ";
+        q5.pergunta = "5 - Assinale a alternativa abaixo que NÃO SE REFERE a um aspecto utilizado para a demarcação da época geológica denominada Antropoceno ";
+        q5.opcaoA = "A- Uma afirmação feita pelos pesquisadores é que o impacto das ações humanas sobre o planeta será visível em sedimentos e rochas daqui a milhões de anos ";
+        q5.opcaoB = "B- Uma variedade de processos antropogênicos, como agricultura, urbanização e aquecimento global foram levados em consideração para se pensar em uma nova época geológica.";
+        q5.opcaoC = "C- A partir da primeira Revolução Industrial, o crescimento da população passa a se tornar um novo agente transformador do planeta que atuará junto com os demais agentes ambientais";
+        q5.opcaoD = "D- A expansão da agricultura e a domesticação dos animais têm um impacto reduzido nas transformações do planeta. Dos processos considerados, aponta-se que a urbanização e a industrialização são os únicos responsáveis pelas mudanças.";
+        q5.opcaoE = "E- A extinção em massa de diversas espécies e a alteração da composição atmosférica, principalmente pelo aumento de gases de efeito estufa, são fenômenos que caracterizam o início do Antropoceno.";
+        q5.correta = "D";
 
         q5.escrevaQuestao();
         resposta = q5.leiaResposta();
         q5.isCorreta(resposta);
+
+        Questao q6 = new Questao();
+        q6.pergunta = "6 - No território brasileiro, a ausência de cadeias montanhosas explica-se:";
+        q6.opcaoA = "A- pela pouca atuação dos agentes externos de transformação do relevo";
+        q6.opcaoB = "B- pela intensiva ação humana sobre as áreas naturais";
+        q6.opcaoC = "C- pelas intensas atuações do tectonismo";
+        q6.opcaoD = "D- pelo escasseamento dos depósitos sedimentares";
+        q6.opcaoE = "E- naturais pela ausência de dobramentos modernos";
+        q6.correta = "E";
+
+        q6.escrevaQuestao();
+        resposta = q6.leiaResposta();
+        q6.isCorreta(resposta);
+
+        Questao q7 = new Questao();
+        q7.pergunta = " 7 - A elevação dos pontos de relevo é um aspecto importante na caracterização climática. As zonas de elevada altitude estão relacionadas à ocorrência de";
+        q7.opcaoA = "A- grandes tempestades.";
+        q7.opcaoB = "B- estiagens severas.";
+        q7.opcaoC = "C- elevada pressão do ar";
+        q7.opcaoD = "D- temperaturas baixas";
+        q7.opcaoE = "E- temperaturas baixas";
+        q7.correta = "D";
+
+        q7.escrevaQuestao();
+        resposta = q7.leiaResposta();
+        q7.isCorreta(resposta);
 
 
 
