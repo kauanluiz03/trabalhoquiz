@@ -180,6 +180,20 @@ public class TrabalhoQuiz {
         resposta = q8.leiaResposta();
         q8.isCorreta(resposta);
 
+        Questao q9 = new Questao();
+        q9.pergunta = "9 - (IF-GO) Desertificação é a degradação de terras nas regiões áridas, semi-áridas e subúmidas secas, resultante de vários fatores, entre eles as variações climáticas e as atividades humanas." +
+                " Sobre a vegetação de climas desérticos, assinale a única opção correta";
+        q9.opcaoA = "A- É formada por plantas xerófilas.";
+        q9.opcaoB = "B- É formada por vegetação tropófilas";
+        q9.opcaoC = "C- É formada por vegetação arbustiva e herbácea";
+        q9.opcaoD = "D- É formada por vegetação arbustiva e herbácea";
+        q9.opcaoE = "E- É formada por espécies de folhas perenes";
+        q9.correta = "A";
+
+        q9.escrevaQuestao();
+        resposta = q9.leiaResposta();
+        q9.isCorreta(resposta);
+
 
 
 
