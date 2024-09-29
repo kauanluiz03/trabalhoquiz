@@ -58,6 +58,8 @@ class Questao {
 public class TrabalhoQuiz {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
+        int acertos = 0;
+        int erros = 0;
         System.out.println("FACULDADE ALFREDO NASSER - UNIFAN");
         System.out.println("--------------------------------------------------");
         System.out.println("ALUNO : KAUAN LUIZ DE SOUTO SILVA");
@@ -67,6 +69,7 @@ public class TrabalhoQuiz {
         String a = leia.nextLine();
 
         System.out.println("BOM ," + a + " SEJA BEM VINDO AO QUIZ , VOCÊ IRA AGORA RESPONDER UM QUESTIONARIO DE 15 PERGUNTAS SOBRE GEOGRAFIA ");
+
 
 
         Questao q1 = new Questao();
@@ -80,7 +83,12 @@ public class TrabalhoQuiz {
 
         q1.escrevaQuestao();
         String resposta = q1.leiaResposta();
-        q1.isCorreta(resposta);
+
+        if (q1.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
 
 
@@ -95,7 +103,12 @@ public class TrabalhoQuiz {
 
         q2.escrevaQuestao();
         resposta = q2.leiaResposta();
-        q2.isCorreta(resposta);
+
+        if (q2.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q3 = new Questao();
         q3.pergunta = "3 - Quantos países tem a América? (todas juntas)";
@@ -108,7 +121,12 @@ public class TrabalhoQuiz {
 
         q3.escrevaQuestao();
         resposta = q3.leiaResposta();
-        q3.isCorreta(resposta);
+
+        if (q3.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q4 = new Questao();
         q4.pergunta = "4 - Considerando o texto abaixo, marque a alternativa que indica corretamente o elemento conceituado:\n" +
@@ -124,7 +142,12 @@ public class TrabalhoQuiz {
 
         q4.escrevaQuestao();
         resposta = q4.leiaResposta();
-        q4.isCorreta(resposta);
+
+        if (q4.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q5 = new Questao();
         q5.pergunta = "5 - Assinale a alternativa abaixo que NÃO SE REFERE a um aspecto utilizado para a demarcação da época geológica denominada Antropoceno ";
@@ -137,7 +160,12 @@ public class TrabalhoQuiz {
 
         q5.escrevaQuestao();
         resposta = q5.leiaResposta();
-        q5.isCorreta(resposta);
+
+        if (q5.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q6 = new Questao();
         q6.pergunta = "6 - No território brasileiro, a ausência de cadeias montanhosas explica-se:";
@@ -150,7 +178,12 @@ public class TrabalhoQuiz {
 
         q6.escrevaQuestao();
         resposta = q6.leiaResposta();
-        q6.isCorreta(resposta);
+
+        if (q6.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q7 = new Questao();
         q7.pergunta = " 7 - A elevação dos pontos de relevo é um aspecto importante na caracterização climática. As zonas de elevada altitude estão relacionadas à ocorrência de";
@@ -163,7 +196,12 @@ public class TrabalhoQuiz {
 
         q7.escrevaQuestao();
         resposta = q7.leiaResposta();
-        q7.isCorreta(resposta);
+
+        if (q7.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q8 = new Questao();
         q8.pergunta = "8 - (UEG 2018) A média da amplitude térmica na cidade de Cuiabá (MT) durante o mês de junho é de 15,2 °C, ao passo que em Salvador (BA) é de 4,8 °C." +
@@ -178,7 +216,12 @@ public class TrabalhoQuiz {
 
         q8.escrevaQuestao();
         resposta = q8.leiaResposta();
-        q8.isCorreta(resposta);
+
+        if (q8.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q9 = new Questao();
         q9.pergunta = "9 - (IF-GO) Desertificação é a degradação de terras nas regiões áridas, semi-áridas e subúmidas secas, resultante de vários fatores, entre eles as variações climáticas e as atividades humanas." +
@@ -192,7 +235,12 @@ public class TrabalhoQuiz {
 
         q9.escrevaQuestao();
         resposta = q9.leiaResposta();
-        q9.isCorreta(resposta);
+
+        if (q9.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q10 = new Questao();
         q10.pergunta = "10 - Assinale a alternativa que apresenta um tipo climático que ocorre no território brasileiro:";
@@ -205,7 +253,12 @@ public class TrabalhoQuiz {
 
         q10.escrevaQuestao();
         resposta = q10.leiaResposta();
-        q10.isCorreta(resposta);
+
+        if (q10.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q11 = new Questao();
         q11.pergunta = "11 - Uma manifestação geomorfológica resultante da consolidação do material magmático na superfície é:";
@@ -218,7 +271,12 @@ public class TrabalhoQuiz {
 
         q11.escrevaQuestao();
         resposta = q11.leiaResposta();
-        q11.isCorreta(resposta);
+
+        if (q11.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
 
         Questao q12 = new Questao();
@@ -237,7 +295,12 @@ public class TrabalhoQuiz {
 
         q12.escrevaQuestao();
         resposta = q12.leiaResposta();
-        q12.isCorreta(resposta);
+
+        if (q12.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q13 = new Questao();
         q13.pergunta = "13 -Marque a alternativa que indica a maior bacia hidrográfica do mundo:";
@@ -250,7 +313,12 @@ public class TrabalhoQuiz {
 
         q13.escrevaQuestao();
         resposta = q13.leiaResposta();
-        q13.isCorreta(resposta);
+
+        if (q13.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q14 = new Questao();
         q14.pergunta = "14 - A bacia do rio ________ é basicamente de planície, sendo amplamente utilizada para navegação e escoamento de produção dos três países banhados por esse rio: Argentina; Brasil; Paraguai. \n" +
@@ -267,7 +335,45 @@ public class TrabalhoQuiz {
 
         q14.escrevaQuestao();
         resposta = q14.leiaResposta();
-        q14.isCorreta(resposta);
+
+        if (q14.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
+
+        Questao q15 = new Questao();
+        q15.pergunta = "15 -Qual das seguintes afirmações sobre a hidrografia do Brasil está correta?";
+        q15.opcaoA = "A- O rio Amazonas é o maior rio em extensão do Brasil.";
+        q15.opcaoB = "B- O rio Paraná forma a maior usina hidrelétrica do Brasil, a Usina de Itaipu.";
+        q15.opcaoC = "C-  A bacia do rio São Francisco é a maior bacia hidrográfica do Brasil.";
+        q15.opcaoD = "D- O Brasil possui poucas bacias hidrográficas devido ao seu clima seco.";
+        q15.opcaoE = "E-  A bacia Amazônica é a menor bacia hidrográfica do Brasil.";
+        q15.correta = "B";
+
+        q15.escrevaQuestao();
+        resposta = q15.leiaResposta();
+
+
+
+        if (q15.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
+
+        System.out.println("Fim do Quiz!");
+        System.out.println("Você acertou " + acertos + " questões.");
+        System.out.println("Você errou " + erros + " questões.");
+
+        // Cálculo da porcentagem de acertos
+        int totalQuestoes = acertos + erros;
+        double porcentagemAcertos = ((double) acertos / totalQuestoes) * 100;
+        System.out.println("Sua porcentagem de acertos foi: " + String.format("%.2f", porcentagemAcertos) + "%.");
+
+
+
+
 
 
 
