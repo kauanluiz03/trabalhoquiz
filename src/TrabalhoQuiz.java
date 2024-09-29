@@ -194,6 +194,34 @@ public class TrabalhoQuiz {
         resposta = q9.leiaResposta();
         q9.isCorreta(resposta);
 
+        Questao q10 = new Questao();
+        q10.pergunta = "10 - Assinale a alternativa que apresenta um tipo climático que ocorre no território brasileiro:";
+        q10.opcaoA = "A- frio de montanha";
+        q10.opcaoB = "B- mediterrâneo";
+        q10.opcaoC = "C- polar";
+        q10.opcaoD = "D- desértico";
+        q10.opcaoE = "E- tropical semiárido";
+        q10.correta = "E";
+
+        q10.escrevaQuestao();
+        resposta = q10.leiaResposta();
+        q10.isCorreta(resposta);
+
+        Questao q11 = new Questao();
+        q11.pergunta = "11 - Uma manifestação geomorfológica resultante da consolidação do material magmático na superfície é:";
+        q11.opcaoA = "A- a constituição de formas de relevo aplainadas";
+        q11.opcaoB = "B- a maior atuação dos agentes exógenos do relevo";
+        q11.opcaoC = "C- o reposicionamento das camadas sedimentares";
+        q11.opcaoD = "D- a formação de rochas ígneas extrusivas";
+        q11.opcaoE = "E- o desencadeamento de processos intempéricos.";
+        q11.correta = "D";
+
+        q11.escrevaQuestao();
+        resposta = q11.leiaResposta();
+        q11.isCorreta(resposta);
+
+
+
 
 
 
