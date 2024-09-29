@@ -239,6 +239,36 @@ public class TrabalhoQuiz {
         resposta = q12.leiaResposta();
         q12.isCorreta(resposta);
 
+        Questao q13 = new Questao();
+        q13.pergunta = "13 -Marque a alternativa que indica a maior bacia hidrográfica do mundo:";
+        q13.opcaoA = "A- bacia do Mississipi";
+        q13.opcaoB = "B- bacia do Amazonas";
+        q13.opcaoC = "C- bacia do Congo";
+        q13.opcaoD = "D- bacia do Nilo";
+        q13.opcaoE = "E-  bacia Platina";
+        q13.correta = "B";
+
+        q13.escrevaQuestao();
+        resposta = q13.leiaResposta();
+        q13.isCorreta(resposta);
+
+        Questao q14 = new Questao();
+        q14.pergunta = "14 - A bacia do rio ________ é basicamente de planície, sendo amplamente utilizada para navegação e escoamento de produção dos três países banhados por esse rio: Argentina; Brasil; Paraguai. \n" +
+                "\n" +
+                "A bacia citada no texto tem como rio principal: \n" +
+                "\n" +
+                " ";
+        q14.opcaoA = "A- Paraná";
+        q14.opcaoB = "B- Uruguai";
+        q14.opcaoC = "C-  Paraguai";
+        q14.opcaoD = "D-  São Francisco";
+        q14.opcaoE = "E-  Araguaia";
+        q14.correta = "C";
+
+        q14.escrevaQuestao();
+        resposta = q14.leiaResposta();
+        q14.isCorreta(resposta);
+
 
 
 
