@@ -186,7 +186,7 @@ public class TrabalhoQuiz {
         q9.opcaoA = "A- É formada por plantas xerófilas.";
         q9.opcaoB = "B- É formada por vegetação tropófilas";
         q9.opcaoC = "C- É formada por vegetação arbustiva e herbácea";
-        q9.opcaoD = "D- É formada por vegetação arbustiva e herbácea";
+        q9.opcaoD = "D- É formada por vegetação mediterrânea e herbácea";
         q9.opcaoE = "E- É formada por espécies de folhas perenes";
         q9.correta = "A";
 
@@ -219,6 +219,28 @@ public class TrabalhoQuiz {
         q11.escrevaQuestao();
         resposta = q11.leiaResposta();
         q11.isCorreta(resposta);
+
+
+        Questao q12 = new Questao();
+        q12.pergunta = "12 - (FUVEST)\n" +
+                "\n" +
+                "O vulcanismo é um dos processos da dinâmica terrestre que sempre encantou e amedrontou a humanidade, existindo diversos registros históricos referentes a esse processo. Sabe-se que as atividades vulcânicas trazem novos materiais para locais próximos à superfície terrestre.\n" +
+                "\n" +
+                "A esse respeito, pode-se afirmar corretamente que o vulcanismo";
+
+        q12.opcaoA = "A- é um dos poucos processos de liberação de energia interna que continuará ocorrendo indefinidamente na história evolutiva da Terra";
+        q12.opcaoB = "B-  é um fenômeno tipicamente terrestre, sem paralelo em outros planetas, pelo que se conhece atualmente.";
+        q12.opcaoC = "C- traz para a atmosfera materiais nos estados líquido e gasoso, tendo em vista originarem-se de todas as camadas internas da Terra.";
+        q12.opcaoD = "D- é o processo responsável pelo movimento das placas tectônicas, causando seu rompimento e o lançamento de materiais fluidos.";
+        q12.opcaoE = "E- ocorre, quando aberturas na crosta aliviam a pressão interna, permitindo a ascensão de novos materiais e mudanças em seus estados físicos";
+        q12.correta = "E";
+
+        q12.escrevaQuestao();
+        resposta = q12.leiaResposta();
+        q12.isCorreta(resposta);
+
+
+
 
 
 
