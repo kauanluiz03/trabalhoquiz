@@ -316,18 +316,5 @@ public class TrabalhoQuiz {
         double porcentagemAcertos = ((double) acertos / totalQuestoes) * 100;
         System.out.println("Sua porcentagem de acertos foi: " + String.format("%.2f", porcentagemAcertos) + "%.");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
